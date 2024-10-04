@@ -13,5 +13,4 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "anakin")
 public class AnakinProperties {
     private Map<String, Integer> models;
-
 }
