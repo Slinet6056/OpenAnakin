@@ -4,7 +4,7 @@ OpenAnakin 是一个兼容 OpenAI API 的 Anakin AI 适配器。它允许使用 
 
 ## 功能
 
-- 支持 OpenAI 兼容的聊天 API
+- 允许使用 OpenAI API 格式调用 Anakin AI 接口
 - 支持流式和非流式响应
 - 可配置的模型到 Anakin 应用 ID 的映射
 
@@ -27,7 +27,7 @@ anakin:
 
 3. 运行 OpenAnakinApplication 类
 
-4. 使用与 OpenAI API 兼容的客户端，将请求发送到 http://localhost:<端口号>/v1/chat/completions
+4. 在与 OpenAI API 兼容的客户端中，设置 base URL 为 http://localhost:<端口号>/v1，并填入 API 密钥即可使用
 
 ## 构建 JAR 包
 
@@ -48,7 +48,7 @@ anakin:
 5. 使用以下命令运行 JAR 文件：
 
     ```sh
-    jajava -jar target/OpenAnakin-1.0-SNAPSHOT.jar  --server.port=8080 --anakin.models.gpt-4o-mini=31800 --anakin.models.gpt-4o=32442
+    java -jar target/OpenAnakin-1.0-SNAPSHOT.jar  --server.port=8080 --anakin.models.gpt-4o-mini=31800 --anakin.models.gpt-4o=32442
     ```
 
 注意：请将 "OpenAnakin-1.0-SNAPSHOT.jar" 替换为实际生成的 JAR 文件名，并根据需要调整端口和模型配置。
