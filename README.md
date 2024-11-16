@@ -10,7 +10,7 @@ OpenAnakin 是一个兼容 OpenAI API 的 Anakin AI 适配器。它允许使用 
 
 ## 配置
 
-在 `application.yml` 文件中配置 Anakin 模型和对应的应用 ID：
+在 `application.yml` 文件中配置模型和对应的 Anakin 应用 ID：
 
 ```yaml
 anakin:
